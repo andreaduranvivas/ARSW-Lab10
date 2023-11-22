@@ -34,7 +34,7 @@
 					],
 					
 					"path": [
-                        "api/Fibonacci"
+                        "api/Memoization"
 					]
 				},
 
