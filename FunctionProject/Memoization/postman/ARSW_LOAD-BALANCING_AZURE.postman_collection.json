@@ -20,20 +20,27 @@
 				}
 			],
 			"request": {
-				"method": "GET",
-				"header": [],
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type", "value": "application/json"
+					}
+				],
 				"url": {
-					"raw": "https://{{VM1}}:443/api/Fibonacci/{{nth}}",
+					"raw": "https://{{VM1}}/api/Memoization",
 					"protocol": "https",
 					"host": [
 						"{{VM1}}"
 					],
-					"port": "443",
+					
 					"path": [
-                        "api",
-						"Fibonacci",
-						"{{nth}}"
+                        "api/Fibonacci"
 					]
+				},
+
+				"body"	: {
+					"mode": "raw",
+					"raw": "{\"nth\": {{nth}}}"
 				}
 			},
 			"response": []
